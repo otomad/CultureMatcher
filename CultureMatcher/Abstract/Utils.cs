@@ -62,7 +62,7 @@ internal static class Utils {
 
 	private static string SerializeLSR(LSR lsr) {
 		return string.Join("-", new string[] { lsr.language, lsr.script, lsr.region }
-			.Select(item => !string.IsNullOrWhiteSpace(item)));
+			.Where(item => !string.IsNullOrWhiteSpace(item)));
 	}
 
 	private static int FindMatchingDistanceForLSR(LSR desired, LSR supported, LanguageInfo data) {
@@ -203,6 +203,9 @@ internal struct LSR {
 		this.language.GetHashCode() ^
 		this.script.GetHashCode() ^
 		this.region.GetHashCode();
+
+	public override string ToString() =>
+		new string[] { language, script, region }.Where(item => !string.IsNullOrEmpty(item)).Join('-');
 
 	public static bool operator ==(LSR left, LSR right) => left.Equals(right);
 	public static bool operator !=(LSR left, LSR right) => !left.Equals(right);

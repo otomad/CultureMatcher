@@ -107,3 +107,8 @@ internal static class Abstract {
 		return r.Value.locale;
 	}
 }
+
+internal struct LookupMatcherResult {
+	internal CultureInfo locale;
+	internal string? extension;
+}

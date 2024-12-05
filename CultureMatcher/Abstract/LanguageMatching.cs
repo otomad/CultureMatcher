@@ -2,10 +2,6 @@ using System.Collections.Generic;
 
 namespace CultureInfoMatcher.Abstract;
 
-internal struct ParadigmLocales {
-	internal string locales;
-}
-
 internal static partial class Data {
 	internal static readonly string[] paradigmLocales = ["en", "en-GB", "es", "es-419", "pt-BR", "pt-PT", "en-Latn-US", "en-Latn-GB", "es-Latn-ES", "es-Latn-419", "pt-Latn-BR", "pt-Latn-PT"];
 

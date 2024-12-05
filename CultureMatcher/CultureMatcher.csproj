@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<VersionPrefix>1.1.2</VersionPrefix>
+		<VersionPrefix>1.0.0</VersionPrefix>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<LangVersion>Latest</LangVersion>
 		<Nullable>Enable</Nullable>
@@ -13,11 +13,12 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/otomad/CultureMatcher</RepositoryUrl>
 		<PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
-		<PackageTags></PackageTags>
+		<PackageTags>intl;i18n;l10n;g11n;translation;internationalization;localization;globalization;culture;locale;CultureInfo</PackageTags>
 		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 		<FileVersion>$(VersionPrefix)</FileVersion>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<!--<PackageLicenseFile>LICENSE</PackageLicenseFile>-->
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<RootNamespace>CultureInfoMatcher</RootNamespace>
 	</PropertyGroup>
