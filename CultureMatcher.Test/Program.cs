@@ -11,3 +11,4 @@ Console.WriteLine(CultureMatcher.Match(new CultureInfo("zh-HK"), availables, def
 Console.WriteLine(CultureMatcher.Match(new CultureInfo("fr-FR"), availables, def));
 Console.WriteLine(CultureMatcher.Match(new CultureInfo("ms-MY"), availables, def));
 Console.WriteLine(CultureMatcher.Match(new CultureInfo("uk-UA"), availables, def));
+Console.WriteLine(CultureMatcher.Match([new("fr-FR"), new("vi-VN"), new("ko-KR")], availables, def));

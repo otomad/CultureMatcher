@@ -1,10 +1,36 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<VersionPrefix>1.1.2</VersionPrefix>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<LangVersion>Latest</LangVersion>
 		<Nullable>Enable</Nullable>
+		<AssemblyName>CultureMatcher</AssemblyName>
+		<Title>$(AssemblyName)</Title>
+		<PackageId>$(AssemblyName)</PackageId>
+		<Authors>yozora</Authors>
+		<Description>Find the best matching culture for a set of cultures an application has translations for</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/otomad/CultureMatcher</RepositoryUrl>
+		<PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
+		<PackageTags></PackageTags>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<RootNamespace>CultureInfoMatcher</RootNamespace>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
