@@ -174,15 +174,15 @@ internal struct LSR {
 				script = splitted[1];
 			else {
 				region = splitted[1];
-				CultureInfo parent = culture;
-				do {
-					parent = parent.Parent;
+				CultureInfo parent = culture.Parent;
+				while (parent is not null && !parent.IsReadOnly) {
 					string[] splitted2 = parent.Name.Split('-');
 					if (parent.IsNeutralCulture && splitted2.Length >= 2) {
 						script = splitted2[1];
 						break;
 					}
-				} while (parent is not null && !parent.IsReadOnly);
+					parent = parent.Parent;
+				}
 			}
 		}
 	}

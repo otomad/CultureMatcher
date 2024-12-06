@@ -45,7 +45,9 @@ public static class CultureMatcher {
 		CultureInfo defaultCulture,
 		MatcherAlgorithm matcherAlgorithm = MatcherAlgorithm.BestFit
 	) =>
-		Match([requestedCulture], availableCultures, defaultCulture, matcherAlgorithm);
+#pragma warning disable IDE0300 // After that it will become a list instead of an array.
+		Match(new CultureInfo[] { requestedCulture }, availableCultures, defaultCulture, matcherAlgorithm);
+#pragma warning restore IDE0300
 
 	/// <summary>
 	/// Lookup supported cultures.

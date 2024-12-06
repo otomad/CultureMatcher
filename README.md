@@ -32,7 +32,7 @@ CultureInfo[] availableCultures = {
     new CultureInfo("zh-TW"),
     new CultureInfo("ja-JP"),
     new CultureInfo("ko-KR"),
-    new CultureInfo("nb-NO"),
+    new CultureInfo("no-NO"),
     new CultureInfo("vi-VN"),
     new CultureInfo("id-ID"),
 };
@@ -58,7 +58,7 @@ CultureMatcher.Match(new CultureInfo("ms-MY"), availableCultures, defaultCulture
 Malay and Indonesian are mutually intelligible.
 
 ```csharp
-CultureMatcher.Match(new CultureInfo("da-DK"), availableCultures, defaultCulture); // nb-NO
+CultureMatcher.Match(new CultureInfo("da-DK"), availableCultures, defaultCulture); // no-NO
 ```
 
 Danish and Norwegian are mutually intelligible.
