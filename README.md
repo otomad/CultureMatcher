@@ -104,11 +104,12 @@ public static CultureInfo Match(
 - `Lookup` would continue to be the existing `LookupMatcher` implementation within ECMA-402.
 - `BestFit` would be implementation-dependent.
 
-## Licence
+## License
 
 CultureMatcher is available under the [MIT License][license-url]. See the LICENSE file for more info.
 
 ## References
+
 - [proposal-intl-localematcher](https://github.com/tc39/proposal-intl-localematcher)
 - [@formatjs/intl-localematcher](https://formatjs.io/docs/polyfills/intl-localematcher)
 - [Mutual intelligibility](https://en.wikipedia.org/wiki/Mutual_intelligibility)
